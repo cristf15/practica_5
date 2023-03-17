@@ -1,0 +1,220 @@
+    <html>
+
+     <head>
+      <link rel="stylesheet" href="css/reveal.css">
+      <link rel="stylesheet" href="css/theme/white.css">
+      <!-- Code syntax highlighting -->
+      <link rel="stylesheet" href="lib/css/zenburn.css">
+     </head>
+
+     <body>
+
+     <div class="reveal">
+      <div class="slides">
+
+<!--PORTADA -->
+ <section>
+ <h1><font color="aquamarine">GNU/Linux</font></h1>
+ <hr>
+ <h2>Cristina Fernández Fernández</h2>
+ <hr>
+ <h3>GNU/Linux</h3>
+</section>
+<!--FIN PORTADA -->
+
+<!--INDICE -->
+<section id="indice">
+<h2>Indice de contenidos</h2>
+
+<ol>
+<li><a href="#/introduccion">Introducción</a></li>
+<li><a href="#/distribuciones">Distribuciones</a></li>
+<li><a href="#/aplicaciones_usuario">Aplicaciones de usuario</a></li>
+<li><a href="#/implantacion">Implantación</a></li>
+<li><a href="#/conclusion">Conclusión</a></li>
+</ol>
+
+</section>
+<!--FIN INDICE -->
+
+
+<!--INTRODUCCIÓN -->
+<section data-background="img/linux.png" data-background-size="contain">
+ <section id="introduccion">
+  <h2><font color="aquamarine">Introducción</font></h2>
+ </section>
+
+ <section data-markdown>
+  <script type="text/template"> 
+   ## GNU/Linux
+
+   * Sistema operativo
+   * Software libre
+   * Ampliamente extendido
+   * Proyecto iniciado por [Richard Stallman](https://es.wikipedia.org/wiki/Richard_Stallman)
+  </script>
+ </section>
+
+ <section data-markdown>
+  <script type="text/template"> 
+   ## GNU/Linux - Diseño
+
+   * Evoluciona poco a poco
+   * Crece a medida que la gente lo desarrolla
+   * Muchos componentes instalados (GNU, GRUB, LILO, SYSLINUX)
+
+  </script>
+ </section>
+
+  <section data-markdown>
+    <script type="text/template">
+    ### GNU/Linux - Ventajas y desventajas:
+
+    |Ventajas|Desventajas|
+    |-----|-----|
+    |Software libre|Complejo|
+    |Muchas distribuciones|Interfaz menos amigable|
+    |Rendimiento|Poco extendido en usuarios finales|
+    |Múltiples herramientas útiles||
+    </script>
+  </section>
+     
+</section>
+<!--FIN INTRODUCCIÓN -->
+
+<!--ESTRUCTURA BASICA-->
+<section>
+ <section id="distribuciones">
+  <h2><font color="aquamarine">Distribuciones de GNU/Linux</font></h2>
+ </section>
+
+ <section data-markdown>
+  <script type="text/template"> 
+   ## Ejemplos de distribuciones GNU/Linux
+
+   * Debian
+   * Ubuntu
+    * Ubuntu Desktop
+    * Kubuntu
+    * Ubuntu Server
+   * Fedora
+   * OpenSUSE
+   * Arch Linux
+
+  </script>
+ </section>
+</section>
+<!--FIN ESTRUCTURA BASICA-->
+
+<!--ESTRUCTURA CON SECCIONES-->
+<section>
+ <section id="aplicaciones_usuario">
+  <h2><font color="aquamarine">Aplicaciones de usuario</font></h2>
+ </section>
+
+ <section data-markdown>
+  <script type="text/template"> 
+   ## Aplicaciones de usuario
+
+   * Ofimática
+   * Navegadores web
+   * Editores de imagen
+   * Entornos de desarrollo
+   * Navegadores web
+
+
+  </script>
+  </section>
+  <section data-markdown>
+    <script type="text/template"> 
+    ## Ejemplo código linux 
+  
+  ```
+  #!/bin/bash
+  echo "Printing text with newline"
+  echo -n "Printing text without newline"
+  echo -e "\nRemoving \t backslash \t characters\n"
+  ```
+  
+  * Este es el lenguaje propio de linux
+    </script>
+   </section>
+ </section>
+</section>
+<!--FIN ESTRUCTURA CON SECCIONES-->
+
+
+<!--PAGINA DE TITULO-->
+
+<!--FIN PAGINA DE TITULO-->
+
+
+<!--MARKDOWN-->
+<section>
+ <section id="implantacion">
+  <h2><font color="aquamarine">Implantación</font></h2>
+ </section>
+
+ <section data-markdown>
+  <script type="text/template"> 
+   ## Implantación
+
+   * Administración pública: hay una serie de administraciones públicas que han mostrado su apoyo al software libre, sea migrando total o parcialmente sus servidores y sistemas de escritorio, sea subvencionándolo. Como ejemplos se tiene a Alemania, Argentina, Australia, Brasil, España, Chile, China, Cuba, México, Perú, Ecuador, El Salvador, Uruguay y Venezuela.
+   * Fuerzas armadas: El sistema operativo del General Atomics MQ-1 Predator está basado en GNU/Linux, así como el del Boeing P-8 Poseidon.
+  </script>
+  <aside class="notes">
+    Aquí unos apuntes para ayudar al presentador (utilizando el plugin). 📝
+  </aside>
+ </section>
+
+
+<!--CONFIGURACION GLOBAL -->
+<section>
+ <section id="conclusion" data-background="img/linux.png" data-background-size="contain">
+  <h2><font color="aquamarine">Conclusión</font></h2>
+ </section>
+
+ <section data-markdown>
+  <script type="text/template"> 
+
+[Vídeo de Richard Stallman](https://www.youtube.com/watch?v=8SdPLG-_wtA&ab_channel=ElFuturoEsApasionantedeVodafone)
+  </script>
+  <aside class="notes">
+    Richard Stallman utiliza el término "Usado" en lugar de "Usuario" porque Facebook utiliza y/o vende nuestros datos. 📝
+  </aside>
+ </section>
+
+</section>
+<!--FIN FRAGMENTOS-->
+
+      </div>
+     </div>
+
+     <script src="lib/js/head.min.js"></script>
+     <script src="js/reveal.js"></script>
+
+     <script>
+        Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    keyboard: true,
+     
+                    dependencies: [
+            		// Interpret Markdown in <section> elements
+            		{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            		{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    ]
+                });
+     </script>
+     <script src="plugin/notes/notes.js"></script>
+     <script>
+         Reveal.initialize({
+             plugins: [ RevealNotes ]
+         });
+     </script>
+
+     </body>
+
+    </html>
